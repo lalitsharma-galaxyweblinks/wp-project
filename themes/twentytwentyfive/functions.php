@@ -156,3 +156,9 @@ if ( ! function_exists( 'twentytwentyfive_format_binding' ) ) :
 		}
 	}
 endif;
+
+
+function custom_hook() {
+	$data = 'Test';
+}
+add_action( 'init', 'custom_hook' );
